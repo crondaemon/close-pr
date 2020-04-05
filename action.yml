@@ -1,5 +1,5 @@
 name: "Close All Pull Requests"
-description: "A GitHub action to automatically close a pull request."
+description: "A GitHub action to automatically close all pull requests."
 author: "Dario Lombardo"
 inputs:
   comment:
