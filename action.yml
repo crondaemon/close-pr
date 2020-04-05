@@ -1,4 +1,4 @@
-name: "Close Pull Request on schedule"
+name: "Close All Pull Requests"
 description: "A GitHub action to automatically close a pull request."
 author: "Dario Lombardo"
 inputs:
