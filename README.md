@@ -1,4 +1,4 @@
-# :no_entry_sign: Close Pull Request
+# :no_entry_sign: Close All Pull Requests
 
 A GitHub action to automatically close all open pull requests.
 
