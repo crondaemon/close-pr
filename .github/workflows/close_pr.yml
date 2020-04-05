@@ -1,0 +1,27 @@
+name: Close Pull Requests
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  close_pr:
+    name: Close any PR
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - uses: ./
+      with:
+        # Optional. Post a issue comment just before closing a pull request.
+        comment: |
+          Hi, thank you for your contribution!
+          Github is however not the right place for these, please have a look at
+
+          https://www.wireshark.org/docs/wsdg_html_chunked/ChSrcContribute.html
+
+          for further instructions.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
