@@ -18,10 +18,6 @@ jobs:
         # Optional. Post a issue comment just before closing a pull request.
         comment: |
           Hi, thank you for your contribution!
-          Github is however not the right place for these, please have a look at
-
-          https://www.wireshark.org/docs/wsdg_html_chunked/ChSrcContribute.html
-
-          for further instructions.
+          Github is however not the right place for those.
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
